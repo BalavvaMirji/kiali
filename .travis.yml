@@ -6,3 +6,4 @@ go:
   - 1.16.x
 script:
   - make build test
+  - go test -v ./...
