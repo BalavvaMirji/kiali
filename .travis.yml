@@ -1,0 +1,8 @@
+language: go
+dist: focal
+arch:
+  - ppc64le
+go:
+  - 1.16.x
+script:
+  - make build test
