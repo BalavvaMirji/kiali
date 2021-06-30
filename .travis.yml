@@ -5,4 +5,4 @@ arch:
 go:
   - 1.16.x
 script:
-  - go test -v ./...
+  - make clean build test-race
