@@ -7,5 +7,5 @@ go:
 script:
   - make build test
   - go test -v ./...
- notifications:
+notifications:
   - email: balavva_mirji@persistent.com
