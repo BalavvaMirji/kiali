@@ -5,4 +5,7 @@ arch:
 go:
   - 1.16.x
 script:
-  - make clean build test-race
+  - make build test
+  - go test -v ./...
+ notifications:
+  - email: balavva_mirji@persistent.com
