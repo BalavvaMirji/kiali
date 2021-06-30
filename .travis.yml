@@ -6,6 +6,10 @@ go:
   - 1.16.x
 script:
   - make build test
-  - go test -v ./...
-notification:
+jobs:
+  include:
+    - stage: Test
+      script:
+        - go test -v ./...
+notifications:
   email: balavva_mirji@persistent.com
