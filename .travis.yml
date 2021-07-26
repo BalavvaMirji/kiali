@@ -1,5 +1,5 @@
 language: go
-dist: focal
+dist: bionic
 arch:
   - ppc64le
 go:
@@ -7,5 +7,3 @@ go:
 script:
   - make build test
   - go test -v ./...
-notifications:
-  email: balavva_mirji@persistent.com
